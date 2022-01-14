@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rocket Space Game</title>
+	<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+	<header>
+		<div class="cabecalho-principal">
+				<h1><img src="imagens/spaceship.png" alt="Logo ROCKET SPACE" width="20%"></h1>
+				<nav>
+					<ul class="navegacao-">
+						<li><a href="index.html"> HOME </a></li>
+						<li><a href="sobrenos.html"> SOBRE NÓS </a></li>
+					</ul>
+				</nav>
+	</header>
+	
+
+	<main>
+		
+		<div class="como-jogar">
+			<h1>como jogar</h1>
+			<p>Clique na tela do jogo e utilize as setas para direita e para esquerda para movimentar a nave</p><br>
+			<p>Modo de pontuação: A cada míssil desviado é acrescentado 01 ponto ao placar, porém caso colidir com algum míssil a pontuação é zerada.</p><br>
+			<p>BOM JOGO !!!!!</p>
+		</div>
+
+		<div class="jogo">
+			<iframe src="https://editor.p5js.org/michael.rodrigues/full/2HrMbI8uk" height="100%" width="100% ">
+			</iframe>
+		</div>
+
+		<div class="satisfacao">
+			<form class="avaliacao" name="avaliacao" onsubmit="return validarFormulario()" method="post">
+				<h1>Avaliação</h1><br><br>
+
+					<div class="nome">
+						<label for="nome">Nome : </label>
+						<input id="nome" type="text" name="nome"><br><br>
+
+						<label for="mail">E-mail:</label>
+						<input id="mail" type="email" name="email"   placeholder="seuemail@dominio.com"><br><br>
+					</div>
+
+				<p>Avalie de 0 a 10 a sua experiência com o jogo</p><br>
+
+
+				<div class="numero">
+					<input type="radio" name="ponto" value="1">
+					<label for="radio-mail">1</label>
+
+					<input type="radio" name="ponto" value="2">
+					<label for="radio-mail">2</label>
+
+					<input type="radio" name="ponto" value="3">
+					<label for="radio-mail">3</label>
+
+					<input type="radio" name="ponto" value="4">
+					<label for="radio-mail">4</label>
+
+					<input type="radio" name="ponto" value="5" >
+					<label for="radio-mail">5</label>
+
+					<input type="radio" name="ponto" value="6">
+					<label for="radio-mail">6</label>
+
+					<input type="radio" name="ponto" value="7">
+					<label for="radio-mail">7</label>
+
+					<input type="radio" name="ponto" value="8" >
+					<label for="radio-mail">8</label>
+
+					<input type="radio" name="ponto" value="9">
+					<label for="radio-mail">9</label>
+
+					<input type="radio" name="ponto" value="10" checked>
+					<label for="radio-mail">10</label><br><br>
+				</div>	
+
+				<input id="enviar-form" type="submit" value="Enviar Avaliação"><br><br>
+
+				<script type="text/javascript">
+					function funcao1(){				
+					
+						if (confirm("Confirma Envio do Formulário?"))
+						  {
+						  alert("Formulário Enviado!");
+						  return true;
+						  }
+						else
+						  {
+						  alert("Cancelado!");
+						  return false;
+						  }
+					
+					}
+				</script>	
+
+				<script type="text/javascript">
+					function validarFormulario(){
+						var nomePessoa = document.forms["avaliacao"]["nome"].value
+						var emailPessoa = document.forms["avaliacao"]["mail"].value
+
+						if (nomePessoa == ""){
+				            alert("Favor Preencher Nome e E-mail");
+				            return false;     
+				        }
+
+				        else if (emailPessoa == ""){
+				        	alert("Favor Preencher E-mail");
+				            return false;
+				        }
+
+				        else{
+
+				        	return funcao1();
+				            
+				        }
+					}	
+				</script>
+				
+			</form>
+		</div>
+
+	</main>
+
+	<footer>
+			<img src="imagens/logo1.png" alt="Logo STM">
+			<p class="copyright">&copy; Copyright STM - Rocket Space - 2021</p>
+		</footer>
+
+<body>
+
+</body>
+</html>

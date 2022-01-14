@@ -1,0 +1,133 @@
+body{
+	background: url("imagens/bg-home.png");
+}
+
+header{
+	background: url(imagens/bg.jpg);
+	padding: 20px 0;
+}
+
+.cabecalho-principal{
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+	
+}
+
+nav{
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li{
+	display: inline;
+	margin-left: 15px;
+}
+
+nav a{
+	color: white;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #C78C18;
+	text-decoration: underline;
+}
+
+
+.contato{
+	display: inline;
+	position: absolute;
+	margin: 20px 0;
+	padding: 10px;	
+	color: white;
+	top: ;
+}
+
+.contato h2{
+	text-transform: uppercase;
+	color: #C78C19;
+	font-size: 28px;
+	font-weight: bold;
+	padding: 5px 0;
+}
+
+.contato h3{
+	padding: 10px 0px;
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+.form-contato{	
+	margin-top: 40px;
+	display: inline-block;
+	padding: 10px;	
+	color: white;
+	margin-left: 550px;
+	
+}
+
+
+#nome{
+	width: 500px;
+}
+
+#mail{
+	width: 500px;
+}
+
+#msg{
+	width: 550px;
+	height: 150px;
+	resize: none
+}
+
+.modo-contato{
+	text-transform: uppercase;
+	color: #C78C19;
+	font-size: 28px;
+	font-weight: bold;
+	padding: 20px 10px;
+}
+
+.form-modo-contato p{
+	text-transform: uppercase;
+	margin-top: 10px;
+	color: white;
+	font-weight: bold;	
+	padding: 5px 0;
+
+}
+
+.form-modo-contato{
+	display: inline-block;
+	color: white;
+	padding: 10px;	
+}
+
+#enviar-form{
+	position: absolute;
+	display: inline-block;
+	margin-left: 550px;
+	width: 200px;
+	height: 30px;
+}
+
+footer{
+	background: url("imagens/bg.jpg");
+	text-align: center;
+	box-sizing: border-box;
+	
+	padding: 40px 0;
+}
+
+.copyright{
+	font-weight: bold;
+	font-size: 13px;
+	color: white;
+	margin-top: 20px;
+}

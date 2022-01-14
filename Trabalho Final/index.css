@@ -1,0 +1,153 @@
+body{
+	background: url("imagens/fundo.jpg");
+	font-family: 'Play', sans-serif;
+
+}
+
+
+.cabecalho-principal{
+	position: relative;
+	width: 100%;	
+	margin: 0 auto;
+	text-align: center;
+	background: #1b1d42;
+}
+
+.cabecalho-principal h1{
+	
+	text-align: left;
+	margin-left: 15%;
+}
+
+nav{
+	position: absolute;
+	top: 45%;
+	right: 20%;
+
+}
+
+nav li{
+	display: inline;
+	margin-left: 40px;
+}
+
+nav a{
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	text-decoration: none;
+	text-shadow: 2px 2px 5px rgba(255,255,255,0.2);
+}
+
+nav a:hover{
+	color: #ff9e00;
+	text-decoration: underline;
+}
+
+
+
+
+.inicio{
+	text-align: center;
+	text-shadow: 2px 2px 5px rgba(255,255,255,0.2);
+	text-transform: uppercase;
+	margin: 80px 0;
+}
+
+.titulo-principal{
+	text-align: center;		
+	border: solid 2px #8b8c89;
+	margin: 10px 30px;
+	padding: 5px 30px 20px 30px;
+	background: rgba(29,53,87,0.8);
+}
+
+.titulo-principal h1{
+	color: #ff9e00;
+	font-weight: bold;
+	font-size: 30px;
+	text-decoration: none;
+	text-shadow: 2px 2px 5px rgba(255,255,255,0.2);
+	padding: 30px;
+	text-align: center;	
+}
+
+.titulo-principal p{
+	font-size: 22px;
+	color: white;
+	
+}
+
+
+button{
+	color: white;
+	width: 300px;
+	height: 30px;
+	background: #ff9e00;
+	font-weight: bold;
+	font-size: 18px;	
+	border: none;
+	border-radius: 5px;	
+	transition: 1s all;
+	cursor: pointer;
+}
+
+button:hover{
+	background: #3a0ca3;
+	transform: scale(1.1);
+	color: white;
+	
+}
+
+
+
+footer{
+	position: relative;
+	text-align: center;
+	box-sizing: border-box;	
+	padding: 20px 0;
+	margin: 10px 0 0;
+	
+}
+
+footer img{
+	width: 20%;
+}
+
+
+
+.copyright{
+	font-weight: bold;
+	font-size: 13px;
+	color: white;
+	margin-top: 20px;
+}
+
+.equipe{
+	text-align: center;		
+	border: solid 2px #8b8c89;
+	margin: 10px 30px;
+	padding: 5px 30px 20px 30px;
+	background: rgba(29,53,87,0.8);
+}
+
+.equipe img{
+	width: 10%;
+
+}
+
+.equipe h1{
+	color: #ff9e00;
+	font-weight: bold;
+	font-size: 30px;
+	text-decoration: none;
+	text-shadow: 2px 2px 5px rgba(255,255,255,0.2);
+	padding: 30px;
+	text-align: center;	
+}
+
+.equipe p{
+	font-size: 22px;
+	color: white;
+	
+}
